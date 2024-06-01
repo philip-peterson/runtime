@@ -84,6 +84,7 @@ namespace System.Diagnostics.Tests
         [SkipOnPlatform(TestPlatforms.iOS | TestPlatforms.tvOS | TestPlatforms.Android | TestPlatforms.Browser, "Not supported on iOS/tvOS/Android/Browser.")]
         public void ProcessStart_DirectoryNameInCurDirectorySameAsFileNameInExecDirectory_Success()
         {
+            Assert.NotNull(null);
             string fileToOpen = "dotnet";
             string curDir = Environment.CurrentDirectory;
             string dotnetFolder = Path.Combine(Path.GetTempPath(),"dotnet");
